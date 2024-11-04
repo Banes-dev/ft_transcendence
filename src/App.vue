@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Footer from './components/Footer.vue'
+// import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -10,12 +11,14 @@ import TheWelcome from './components/TheWelcome.vue'
 			<span>ft_Transcendence {{msg}}</span>
 		<!-- </form> -->
 		<div class="wrapper">
-		<HelloWorld msg="Let's go" />
+		<!-- <HelloWorld msg="Let's go" /> -->
 		</div>
 	</header>
 
 	<main>
 		<!-- <TheWelcome /> -->
+		<HelloWorld msg="Let's go" />
+		<Footer/>
 	</main>
 </template>
 
