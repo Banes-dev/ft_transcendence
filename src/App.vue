@@ -5,49 +5,22 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-	<header>
-		<!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-		<!-- <form> -->
-			<span>ft_Transcendence {{msg}}</span>
-		<!-- </form> -->
-		<div class="wrapper">
-		<!-- <HelloWorld msg="Let's go" /> -->
-		</div>
-	</header>
+	<div class="w-screen h-screen flex flex-col">
+		<header class="w-full">
+			<!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+		</header>
 
-	<main>
-		<!-- <TheWelcome /> -->
-		<HelloWorld msg="Let's go" />
-		<Footer/>
-	</main>
+		<main class="flex-1 w-full">
+			<div class="bg-custom-bg bg-cover bg-center h-full flex items-center justify-center">
+				<HelloWorld msg="Let's go" />
+			</div>
+			<Footer/>
+		</main>
+	</div>
 </template>
 
-<!-- <style scoped>
-header
-{
-	line-height: 1.5;
+<style>
+body {
+	overflow-x: hidden; /* Désactive seulement le défilement horizontal */
 }
-
-.logo {
-	display: block;
-	margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-	header {
-		display: flex;
-		place-items: center;
-		padding-right: calc(var(--section-gap) / 2);
-	}
-
-	.logo {
-		margin: 0 2rem 0 0;
-	}
-
-	header .wrapper {
-		display: flex;
-		place-items: flex-start;
-		flex-wrap: wrap;
-	}
-}
-</style> -->
+</style>

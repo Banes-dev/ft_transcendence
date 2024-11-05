@@ -7,21 +7,21 @@
 					<h2 class="text-xl font-semibold text-white mb-4">Equipes</h2>
 					<div class="flex flex-col md:flex-row md:space-x-8">
 						<ul class="mb-4 md:mb-0">
-							<li><a href="#" class="hover:text-white">gabarnou | Devops & Gestion</a></li>
-							<li><a href="#" class="hover:text-white">vmassoli | Data</a></li>
+							<li><a href="https://github.com/Hewya" class="hover:text-white">gabarnou | Devops & Gestion</a></li>
+							<li><a href="https://github.com/Maulken" class="hover:text-white">vmassoli | Data</a></li>
 						</ul>
 						<ul>
 							<li><a href="#" class="hover:text-white">gschwart | Backend</a></li>
-							<li><a href="#" class="hover:text-white">ehay | Front</a></li>
+							<li><a href="https://github.com/Banes-dev" class="hover:text-white">ehay | Front</a></li>
 						</ul>
 					</div>
 				</div>
 		
 				<!-- Section droite : Github -->
 				<div class="w-full md:w-1/3 text-center md:text-right">
-					<h2 class="text-xl font-semibold text-white">Github Project</h2>
-					<div class="flex justify-center md:justify-center mt-2 space-x-3">
-						<a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+					<h2 class="text-xl font-semibold text-white mb-4">Github Project</h2>
+					<div class="flex justify-center md:justify-end mr-14 space-x-3">
+						<a href="https://github.com/Banes-dev/ft_transcendence" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
 					</div>
 				</div>
 			</div>
