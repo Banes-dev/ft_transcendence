@@ -1,7 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import LoopVideo from './components/LoopVideo.vue'
 import Footer from './components/Footer.vue'
-// import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -12,7 +12,9 @@ import Footer from './components/Footer.vue'
 
 		<main class="flex-1 w-full">
 			<div class="bg-custom-bg bg-cover bg-center h-full flex items-center justify-center">
-				<HelloWorld msg="Let's go" />
+				<HelloWorld msg="Let's go"/>
+				<!-- <LoopVideo videoSrc="/assets/feu_artifice_low.mp4"/> -->
+				<LoopVideo/>
 			</div>
 			<Footer/>
 		</main>

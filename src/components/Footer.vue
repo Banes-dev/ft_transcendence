@@ -11,8 +11,8 @@
 							<li><a href="https://github.com/Maulken" class="hover:text-white">vmassoli | Data</a></li>
 						</ul>
 						<ul>
-							<li><a href="#" class="hover:text-white">gschwart | Backend</a></li>
-							<li><a href="https://github.com/Banes-dev" class="hover:text-white">ehay | Front</a></li>
+							<li><a href="https://github.com/guillaume7642" class="hover:text-white">gschwart | Backend</a></li>
+							<li><a href="https://github.com/Banes-dev" class="hover:text-white">ehay | Frontend</a></li>
 						</ul>
 					</div>
 				</div>
