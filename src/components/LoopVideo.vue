@@ -1,31 +1,24 @@
+<!-- src/components/LoopVideo.vue -->
 <template>
-  <div class="relative">
-    <!-- Vidéo en fond transparent, en boucle -->
-    <video 
-      autoplay 
-      loop 
-      muted 
-      playsinline 
-      class="absolute inset-0 w-full h-full object-cover"
+  <div class="absolute inset-0 -z-10 w-full h-full overflow-hidden">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="object-cover w-full h-full"
     >
-      <source src="../assets/feu_artifice_low.mp4" type="video/mp4">
-      <!-- Message de fallback si le format n'est pas supporté -->
-      Ton navigateur ne supporte pas les vidéos en HTML5.
+      <source src="@/assets/fond_video.mp4" type="video/mp4" />
+      <!-- Remarque : Assurez-vous que la vidéo est dans le dossier `src/assets/videos` -->
+      Votre navigateur ne supporte pas les vidéos HTML5.
     </video>
-    <!-- Contenu de la page, comme du texte ou d'autres éléments -->
-    <div class="relative z-10 text-white text-center p-8">
-      <h1 class="text-4xl font-bold">Bienvenue à notre célébration!</h1>
-      <p class="mt-4 text-lg">Profitez du spectacle de feu d'artifice en arrière-plan.</p>
-    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'LoopVideo'
-}
+<script setup>
+// Pas de script nécessaire ici
 </script>
 
 <style scoped>
-/* Pour contrôler le style de la vidéo si nécessaire */
+/* Style optionnel pour ajuster le fond */
 </style>

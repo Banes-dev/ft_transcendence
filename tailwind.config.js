@@ -4,9 +4,9 @@ export default {
   content: [],
   theme: {
     extend: {
-      backgroundImage: {
-        'custom-bg': "url('@/assets/img/fond 2 blur.png')",
-      }
+      // backgroundImage: {
+      //   'custom-bg': "url('@/assets/img/fond 2 blur.png')",
+      // }
     },
   },
   plugins: [],
