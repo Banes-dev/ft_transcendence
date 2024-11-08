@@ -8,8 +8,7 @@
       playsinline
       class="object-cover w-full h-full"
     >
-      <source src="@/assets/fond_video.mp4" type="video/mp4" />
-      <!-- Remarque : Assurez-vous que la vidéo est dans le dossier `src/assets/videos` -->
+      <source src="@/assets/video/artifice_1.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas les vidéos HTML5.
     </video>
   </div>

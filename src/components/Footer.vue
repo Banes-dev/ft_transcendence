@@ -4,7 +4,7 @@
 			<div class="flex flex-wrap justify-between items-start">
 				<!-- Section gauche : Equipes -->
 				<div class="w-full md:w-2/3 text-center md:text-left mb-6 md:mb-0">
-					<h2 class="text-xl font-semibold text-white mb-4">Equipes</h2>
+					<h2 class="text-xl font-semibold text-white mb-4">{{$t('Team')}}</h2>
 					<div class="flex flex-col md:flex-row md:space-x-8">
 						<ul class="mb-4 md:mb-0">
 							<li><a href="https://github.com/Hewya" class="hover:text-white">gabarnou | Devops & Gestion</a></li>
@@ -19,7 +19,7 @@
 		
 				<!-- Section droite : Github -->
 				<div class="w-full md:w-1/3 text-center md:text-right">
-					<h2 class="text-xl font-semibold text-white mb-4">Github Project</h2>
+					<h2 class="text-xl font-semibold text-white mb-4">{{$t('Github')}}</h2>
 					<div class="flex justify-center md:justify-end mr-14 space-x-3">
 						<a href="https://github.com/Banes-dev/ft_transcendence" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
 					</div>
