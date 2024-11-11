@@ -6,19 +6,12 @@ import Footer from './components/Footer.vue'
 
 <template>
 	<div class="w-screen h-screen flex flex-col">
-		<LoopVideo />
+		<LoopVideo/>
 		<Header/>
-		<!-- <header class="">
-			<Header/> -->
-			<!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-		<!-- </header> -->
 
 		<main class="flex-1 w-full">
-			<!-- <LoopVideo>
-				<HelloWorld msg="Let's go"/>
-			</LoopVideo> -->
-			<div class="bg-custom-bg bg-cover bg-center h-full flex items-center justify-center">
-				<HelloWorld msg="Let's go"/>
+			<div class="h-full w-full flex items-center justify-center">
+				<h2>test</h2>
 			</div>
 			<Footer/>
 		</main>

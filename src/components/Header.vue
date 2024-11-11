@@ -1,10 +1,10 @@
 <template>
-	<header class="bg-gray-800 text-gray-300 py-6 mt-auto max-w-6xl mx-auto px-36 rounded-b-xl">
-		<div class="absolute justify-center items-center">
-			<h2 class="text-white relative -mx-32 -top-2.5">{{$t('Tournaments')}}</h2>
+	<header class="bg-gray-800 text-gray-300 py-6 mt-auto max-w-6xl mx-auto px-36 rounded-b-xl relative">
+		<div class="flex items-center absolute left-5 top-3.5 space-x-1">
+			<h2 class="text-white">{{$t('Tournaments')}}</h2>
 			<img
-				class="invert relative mx-12 -top-8 h-5 w-5"
-				src="../assets/img/cup.png"
+				class="relative h-5 w-5"
+				src="../assets/img/cup_yellow.png"
 				alt="Image de la coupe du tournoi"
 			/>
 		</div>
@@ -24,7 +24,7 @@
 				<div v-else-if="$i18n.locale === 'es'">
 					<i class="fi fi-es text-1xl mr-2"></i>
 				</div>
-				<span>{{ $t('Language', $i18n.locale) }}</span>
+				<span>{{$t('Language', $i18n.locale)}}</span>
 			</button>
 			<div
 				v-if="showDropdown"
@@ -35,20 +35,36 @@
 						v-for="locale in $i18n.availableLocales"
 						:key="`locale-${locale}`"
 						@click="changeLocale(locale)"
-						class="px-4 py-2 text-white hover:text-red-600 cursor-pointer"
+						class="flex items-center justify-center px-4 py-2 text-white hover:text-red-600 cursor-pointer"
 					>{{$t('Language', locale)}}
 					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
+	<!-- Profil -->
 	<div class="relative flex justify-center">
 		<img
 			class="h-14 w-14 rounded-xl border-2 border-red-600 absolute -top-10"
 			src="../assets/img/default_avatar.png"
 			alt="Avatar par défaut"
 		/>
+		<div
+			v-if="!isConnected"
+			class="bg-gray-800 border border-gray-600 rounded-md w-26 absolute top-6 z-10"
+		>
+			<ul>
+				<li
+					v-for="(name, index) in items"
+					:key="index"
+					@click="handle(index)"
+					class="flex items-center justify-center px-4 py-2 text-white hover:text-red-600 cursor-pointer"
+				>{{name}}
+				</li>
+			</ul>
+		</div>
 	</div>
+
 </template>
 
 <script>
@@ -56,13 +72,34 @@
 		name: "Header",
 		data() {
 			return {
+				items: [this.$t('Login'), this.$t('Register')],
 				showDropdown: false,
+				isConnected: false,
+				login_state: false,
+				register_state: false,
 			};
 		},
 		methods: {
 			changeLocale(locale) {
 				this.$i18n.locale = locale;
 				this.showDropdown = false;
+			},
+			handle(index) {
+				if (index === 0)
+				{
+					this.login();
+				} else if (index === 1)
+				{
+					this.register();
+				}
+			},
+			login() {
+				this.login_state = true;
+				this.isConnected = true;
+			},
+			register() {
+				this.register_state = true;
+				this.isConnected = true;
 			},
 		},
 	};
